@@ -7,6 +7,6 @@
 <p class="text-muted">${{tab.tipDollars}} is enough money to buy a book. Tipping improves lives!</p>
 
 <div class="pull-right">
-  {{#mdl-button isRaised=true on-click="submit"}}Done{{/mdl-button}}
+  {{#mdl-button isRaised=true on-click=(action "submit" true)}}Done{{/mdl-button}}
   {{#mdl-button isRaised=true on-click="submit"}}Split{{/mdl-button}}
 </div>

@@ -5,16 +5,17 @@ toDollars = (cents) ->
   (cents/100).toFixed(2)
 
 Tab = DS.Model.extend
-  billCents: DS.attr({defaultValue: 5842})
-  selectedTipPercent: DS.attr({defaultValue: 20})
+  billCents: DS.attr()
+  selectedTipPercent: DS.attr()
 
   # {'up', 'down', 'exact'}
-  rounding: DS.attr({defaultValue: 'exact'})
+  rounding: DS.attr()
 
   # {'evenly', 'custom'}
-  split: DS.attr({defaultValue: 'evenly'})
+  split: DS.attr()
 
-  numberParticipants: DS.attr({defaultValue: 4})
+  numberParticipants: DS.attr()
+  date: DS.attr('date', { defaultValue: -> new Date() })
 
   participants: ( ->
     perParticipant = (@get('totalDollars')/@get('numberParticipants')).toFixed(2)

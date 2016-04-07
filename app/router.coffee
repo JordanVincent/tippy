@@ -5,7 +5,8 @@ Router = Ember.Router.extend
   location: config.locationType
 
 Router.map ->
-  @route 'tabs', ->
-    @route 'tab', { resetNamespace: true }, ->
+  @route 'tabs', { path: '/' }, ->
+    @route 'new'
+  @route 'tab', { path: 'tabs/:tab_id' }
 
 `export default Router;`

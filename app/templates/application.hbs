@@ -1,11 +1,9 @@
 <div id="application">
-  {{#mdl-nav title='Tippy' fixedHeader=true}}
-    {{mdl-nav-item name='Clear'}}
+  {{#mdl-nav title='Tippy' fixedHeader=true closeDrawerOnItemClick=true}}
+    {{mdl-nav-item name='Recent Tabs' route='tabs'}}
     <div class="mdl-grid">
       <div class="mdl-cell mdl-cell--12-col">
-        {{#each visibleSteps as |step|}}
-          {{step-item step=step tab=model isActive=(eq step activeStep) submit="submit" activate="activate"}}
-        {{/each}}
+        {{outlet}}
       </div>
     </div>
   {{/mdl-nav}}

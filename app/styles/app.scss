@@ -110,3 +110,26 @@ $color-accent: $palette-pink-A200;
     }
   }
 }
+
+.tab-item {
+  border-bottom: 1px solid #ddd;
+  padding: 16px 0;
+
+  h6 {
+    margin: 0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.mdl-layout__content {
+  position: relative;
+}
+
+.floating-button {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}

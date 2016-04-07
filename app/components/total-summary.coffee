@@ -4,7 +4,7 @@ TotalSummaryComponent = Ember.Component.extend
   classNames: ['total-summary']
 
   actions:
-    submit: ->
-      @sendAction('submit')
+    submit: (quit) ->
+      @sendAction('submit', quit)
 
 `export default TotalSummaryComponent;`

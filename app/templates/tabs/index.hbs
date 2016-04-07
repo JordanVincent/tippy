@@ -1,0 +1,9 @@
+{{#each model as |tab|}}
+  {{#link-to 'tab' tab tagName="div" class="tab-item clearfix"}}
+    <span class="pull-right text-muted">{{moment-from-now tab.date}}</span>
+    <h6><b>${{tab.totalDollars}}</b></h6>
+    <p>${{tab.tipDollars}} ({{tab.tipPercent}}%)</p>
+  {{/link-to}}
+{{/each}}
+
+{{#mdl-button isFloating=true on-click="new" class="floating-button"}}{{mdl-icon icon='add'}}{{/mdl-button}}

@@ -5,6 +5,6 @@ ShareSummaryComponent = Ember.Component.extend
 
   actions:
     submit: ->
-      @sendAction('submit')
+      @sendAction('submit', true)
 
 `export default ShareSummaryComponent;`
