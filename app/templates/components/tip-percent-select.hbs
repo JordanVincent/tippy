@@ -1,0 +1,9 @@
+<div class="choice-buttons-row">
+  {{#mdl-button isFloating=true on-click=(action "submit" 20) class=(if (eq tab.selectedTipPercent 'custom') "choice-button active large-margin" "choice-button large-margin")}}{{mdl-icon icon='star'}}<span>Custom</span>{{/mdl-button}}<!--
+  -->{{#mdl-button isFloating=true on-click=(action "submit" 20) class=(if (eq tab.selectedTipPercent 'help') "choice-button active large-margin" "choice-button large-margin")}}{{mdl-icon icon='help'}}<span>Assistant</span>{{/mdl-button}}
+</div>
+<div class="choice-buttons-row">
+  {{#mdl-button isFloating=true on-click=(action "submit" 10) class=(if (eq tab.selectedTipPercent 10) "choice-button active large-margin" "choice-button large-margin")}}10<small>%</small><span>${{tip10Dollars}}</span>{{/mdl-button}}
+  {{#mdl-button isFloating=true on-click=(action "submit" 15) class=(if (eq tab.selectedTipPercent 15) "choice-button active large-margin" "choice-button large-margin")}}15<small>%</small><span>${{tip15Dollars}}</span>{{/mdl-button}}
+  {{#mdl-button isFloating=true on-click=(action "submit" 20) class=(if (eq tab.selectedTipPercent 20) "choice-button active large-margin" "choice-button large-margin")}}20<small>%</small><span>${{tip20Dollars}}</span>{{/mdl-button}}
+</div>

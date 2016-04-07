@@ -1,0 +1,5 @@
+<div class="choice-buttons-row">
+  {{#mdl-button isFloating=true class=(if (eq tab.rounding 'down') "choice-button active large-margin" "choice-button large-margin") on-click=(action "submit" 'down')}}${{tab.totalDownDollars}}<span>Round<br>Down</span>{{/mdl-button}}<!--
+  -->{{#mdl-button isFloating=true class=(if (eq tab.rounding 'exact') "choice-button active large-margin" "choice-button large-margin") on-click=(action "submit" 'exact')}}${{tab.totalExactDollars}}<span>Exact</span>{{/mdl-button}}<!--
+  -->{{#mdl-button isFloating=true class=(if (eq tab.rounding 'up') "choice-button active large-margin" "choice-button large-margin") on-click=(action "submit" 'up')}}${{tab.totalUpDollars}}<span>Round<br>Up</span>{{/mdl-button}}
+</div>

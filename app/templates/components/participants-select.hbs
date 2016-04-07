@@ -1,0 +1,9 @@
+<div class="choice-buttons-row">
+  {{#mdl-button isFloating=true on-click=(action "submit" 2) class=(if (eq tab.numberParticipants 2) "choice-button active" "choice-button")}}2{{/mdl-button}}
+  {{#mdl-button isFloating=true on-click=(action "submit" 3) class=(if (eq tab.numberParticipants 3) "choice-button active" "choice-button")}}3{{/mdl-button}}
+  {{#mdl-button isFloating=true on-click=(action "submit" 4) class=(if (eq tab.numberParticipants 4) "choice-button active" "choice-button")}}4{{/mdl-button}}
+</div>
+<div class="choice-buttons-row">
+  {{#mdl-button isFloating=true on-click=(action "submit" 5) class=(if (eq tab.numberParticipants 5) "choice-button active" "choice-button") class=(if (eq tab.numberParticipants 'custom') "choice-button active" "choice-button")}}5{{/mdl-button}}<!--
+  -->{{#mdl-button isFloating=true on-click=(action "submit" 6) class=(if (gt tab.numberParticipants 5) "choice-button active" "choice-button")}}{{mdl-icon icon='add'}}{{/mdl-button}}
+</div>

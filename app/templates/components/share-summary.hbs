@@ -1,0 +1,12 @@
+
+{{#each tab.participants as |participant| }}
+  <div class="clearfix participant">
+    <div class="avatar"></div>
+    {{mdl-button icon='share' class="pull-right share-button"}}
+    <div class="inner">${{participant}}</div>
+  </div>
+{{/each}}
+
+<div class="pull-right">
+  {{#mdl-button isRaised=true on-click="submit"}}Done{{/mdl-button}}
+</div>

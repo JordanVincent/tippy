@@ -1,3 +1,12 @@
-<h2 id="title">Welcome to Ember</h2>
-
-{{outlet}}
+<div id="application">
+  {{#mdl-nav title='Tippy' fixedHeader=true}}
+    {{mdl-nav-item name='Clear'}}
+    <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--12-col">
+        {{#each visibleSteps as |step|}}
+          {{step-item step=step tab=model isActive=(eq step activeStep) submit="submit" activate="activate"}}
+        {{/each}}
+      </div>
+    </div>
+  {{/mdl-nav}}
+</div>

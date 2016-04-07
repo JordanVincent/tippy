@@ -1,0 +1,11 @@
+{{#liquid-if isActive class="step-activation"}}
+  <h3 class="title">{{step.title}}</h3>
+  <p class="description text-muted">{{step.description}}</p>
+  {{component step.componentName submit="submit" step=step tab=tab}}
+
+{{else}}
+<div class="clearfix" {{action "activate"}}>
+  <h6 class="value pull-right text-muted">{{step-formatted-value step=step tab=tab}}</h6>
+  <h6 class="title">{{step.title}}</h6>
+</div>
+{{/liquid-if}}

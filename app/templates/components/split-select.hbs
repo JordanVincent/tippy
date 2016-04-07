@@ -1,0 +1,4 @@
+<div class="choice-buttons-row">
+  {{#mdl-button isFloating=true class=(if (eq tab.split 'evenly') "choice-button active large-margin" "choice-button large-margin") on-click=(action "submit" 'evenly')}}${{evenlyShareDollars}}/p<span>Evenly</span>{{/mdl-button}}<!--
+  -->{{#mdl-button isFloating=true class=(if (eq tab.split 'custom') "choice-button active large-margin" "choice-button large-margin") on-click=(action "submit" 'custom')}}{{mdl-icon icon='star'}}<span>Custom</span>{{/mdl-button}}
+</div>
