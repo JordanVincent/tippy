@@ -4,6 +4,9 @@
     <h6><b>${{tab.totalDollars}}</b></h6>
     <p>${{tab.tipDollars}} ({{tab.tipPercent}}%)</p>
   {{/link-to}}
+{{else}}
+  <img src="assets/images/tab.png" class="tab-img"/>
+  <p class="text-muted empty-message">You don't have any tabs yet. Create one now!</p>
 {{/each}}
 
 {{#mdl-button isFloating=true on-click="new" class="floating-button"}}{{mdl-icon icon='add'}}{{/mdl-button}}

@@ -1,7 +1,7 @@
 {
-  "name": "dropbox",
-  "version": "0.0.0",
-  "description": "Small description for dropbox goes here",
+  "name": "tippy",
+  "version": "0.0.1",
+  "description": "Small description for tippy goes here",
   "private": true,
   "directories": {
     "doc": "doc",

@@ -3,10 +3,13 @@
   <div class="mdl-cell mdl-cell--2-col"><h3>${{tab.totalDollars}}<small>Total</small></h3></div>
 </div>
 
-<h6 class="text-muted">Did you know?</h6>
-<p class="text-muted">${{tab.tipDollars}} is enough money to buy a book. Tipping improves lives!</p>
+<div class="clearfix info">
+  <img src="assets/images/jar.png"/>
+  <h6 class="text-muted">Did you know?</h6>
+  <p class="text-muted">${{tab.tipDollars}} is enough money to buy a book. Tipping improves lives!</p>
+</div>
 
 <div class="pull-right">
   {{#mdl-button isRaised=true on-click=(action "submit" true)}}Done{{/mdl-button}}
-  {{#mdl-button isRaised=true on-click="submit"}}Split{{/mdl-button}}
+  {{#mdl-button isRaised=true on-click=(action "submit" false)}}Split{{/mdl-button}}
 </div>

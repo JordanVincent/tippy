@@ -2,7 +2,7 @@
 
 StepItemComponent = Ember.Component.extend
   classNames: ['step-item']
-  classNameBindings: ['isActive:active']
+  classNameBindings: ['isActive:active:inactive']
 
   actions:
     submit: (value) ->

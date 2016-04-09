@@ -7,12 +7,6 @@ TabsNewRoute = Ember.Route.extend
     @render('tab')
 
   model: ->
-    # @store.createRecord 'tab',
-    #   billCents: defaultValue: 5842
-    #   selectedTipPercent: 20
-    #   rounding: 'exact'
-    #   split: 'evenly'
-    #   numberParticipants: 4
     @store.createRecord('tab')
 
 `export default TabsNewRoute;`

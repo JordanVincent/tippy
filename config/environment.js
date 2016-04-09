@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'dropbox',
+    modulePrefix: 'tippy',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',

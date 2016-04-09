@@ -5,6 +5,15 @@ $color-accent: $palette-pink-A200;
 
 @import 'material-design-lite';
 
+body {
+  background: white;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 #application {
   width: 330px;
   height: 500px;
@@ -49,42 +58,57 @@ $color-accent: $palette-pink-A200;
 
 .total-summary {
   h6 {
-    margin-bottom: 0;
-  }
-}
-
-.step-item .choice-buttons-row {
-  text-align: center;
-}
-
-.step-item .choice-button {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 8px;
-  margin-right: 8px;
-  overflow: visible;
-  text-transform: none;
-  font-size: 20px;
-
-  box-shadow: none;
-  background: unquote("rgb(#{$palette-grey-500})");
-
-  &.active, &:hover, &:focus {
-    background: unquote("rgb(#{$color-primary})");
+    margin: 0;
   }
 
-  &.large-margin {
-    margin-bottom: 40px;
+  .info {
+    margin-bottom: 16px;
   }
 
-  span {
-    position: absolute;
-    font-size: 14px;
-    top: 85px;
-    text-align: center;
+  img {
     width: 80px;
-    left: 0;
-    color: unquote("rgb(#{$palette-grey-500})");
+    margin-right: 8px;
+    float: left;
+  }
+}
+
+.step-item {
+  &.inactive {
+    cursor: pointer;
+  }
+  .choice-buttons-row {
+    text-align: center;
+  }
+
+  .choice-button {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    overflow: visible;
+    text-transform: none;
+    font-size: 20px;
+
+    box-shadow: none;
+    background: unquote("rgb(#{$palette-grey-500})");
+
+    &.active, &:hover, &:focus {
+      background: unquote("rgb(#{$color-primary})");
+    }
+
+    &.large-margin {
+      margin-bottom: 40px;
+    }
+
+    span {
+      position: absolute;
+      font-size: 14px;
+      top: 85px;
+      text-align: center;
+      width: 80px;
+      left: 0;
+      color: unquote("rgb(#{$palette-grey-500})");
+    }
   }
 }
 
@@ -114,6 +138,7 @@ $color-accent: $palette-pink-A200;
 .tab-item {
   border-bottom: 1px solid #ddd;
   padding: 16px 0;
+  cursor: pointer;
 
   h6 {
     margin: 0;
@@ -132,4 +157,16 @@ $color-accent: $palette-pink-A200;
   position: absolute;
   bottom: 16px;
   right: 16px;
+}
+
+img.tab-img {
+  width: 150px;
+  margin: 50px auto 0 auto;
+  display: block;
+}
+
+.empty-message {
+  width: 200px;
+  margin: 30px auto 0 auto;
+  text-align: center;
 }
